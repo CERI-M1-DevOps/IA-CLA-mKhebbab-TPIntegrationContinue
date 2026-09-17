@@ -10,4 +10,4 @@ jobs:
  personneASaluer: 'Mon voisin Totoro'
  run: echo "Bonjour ${personneASaluer}"
  - name: L'heure de salutation # affiche l'heure de la précédente tâche
- run: echo "L'heure était $(date)." 
+ run: echo "L'heure étai
