@@ -1,0 +1,26 @@
+name: Java CI with Maven - Test and package
+
+on: pull_request
+
+      branches:
+
+        - main
+jobs:
+
+  build:
+
+    runs-on:  ubuntu-latest
+
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4 
+
+      - name: setup-java
+        uses: actions/setup-java@v4
+        with:         
+          java-version : '21'
+          distribution: 'correcto'
+
+      - name: build by Maven
+        run: nvm -B package
