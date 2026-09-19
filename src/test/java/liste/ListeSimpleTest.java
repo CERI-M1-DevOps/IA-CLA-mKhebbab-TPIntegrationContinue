@@ -203,7 +203,7 @@ public class ListeSimpleTest {
         listeATester.ajout(3);
         listeATester.ajout(4);
         listeATester.inverser();
-        assertEquals(listeATester.toString(), "ListeSimple(Noeud(1), Noeud(2), Noeud(3), Noeud(4))");
+        assertEquals("ListeSimple(Noeud(1), Noeud(2), Noeud(3), Noeud(4))",listeATester.toString());
     }
 
     @Test
